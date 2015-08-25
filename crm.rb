@@ -1,3 +1,4 @@
+require_relative 'contact'
 require 'sinatra'
 
 get '/' do
@@ -9,3 +10,6 @@ get '/contacts' do
   erb :contacts
 end
 
+get '/contacts/new' do
+  "Add a contact"
+end
