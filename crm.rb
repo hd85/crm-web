@@ -1,3 +1,4 @@
+require_relative 'rolodex'
 require_relative 'contact'
 require 'sinatra'
 
@@ -8,9 +9,9 @@ end
 
 get '/contacts' do
   @contacts = []
-  @contacts << Contact.new("Yehuda", "Katz", "yehuda@example.com", "Developer")
-  @contacts << Contact.new("Mark", "Zuckerberg", "mark@facebook.com", "CEO")
-  @contacts << Contact.new("Sergey", "Brin", "sergey@google.com", "Co-Founder")
+  @contacts << Contact.new(1000, "Yehuda", "Katz", "yehuda@example.com", "Developer")
+  @contacts << Contact.new(1001, "Mark", "Zuckerberg", "mark@facebook.com", "CEO")
+  @contacts << Contact.new(1002, "Sergey", "Brin", "sergey@google.com", "Co-Founder")
 
   erb :contacts
 end
