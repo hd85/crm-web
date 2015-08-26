@@ -1,0 +1,25 @@
+
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        width: 660px;
+        background: #9B8E79;
+      }
+
+      h1 {
+        color: #4F4535;
+      }
+
+      p {
+        color: #29649B;
+      }
+
+      header, footer {
+        font-size: 24px;
+        color: #29649B;
+      }
+
+      a {
+        font-size: 26px;
+      }
