@@ -1,0 +1,57 @@
+HTTP & Intro to Sinatra
+
+HTTP = Hypertext Transfer Protocol
+helps us define how info should be passed around the web
+
+the entire world wide web is based off Requests & Responses
+
+Client makes the request. server provides the response
+
+What's in a Request?
+- URL (Uniform Resource locator): an address that helps us represent a particular resource
+- Request Method (like GET)
+- Headers (Content-Type, etc)
+- Sometimes a body
+
+What's in a Response?
+- Status Code (200 OK, 404 Not Found, etc)
+- Headers
+- Body (most of the time)
+
+HTTP is stateless
+- State (or context) is never saved between requests
+- The server will forget who you are each time
+- Each new request needs to provide the right context
+- Can be solved with cookies
+
+Request Methods
+- A URL alone isn't enough to do everything we need to do on the web
+- We need an action / verb / method too!
+- The most popular ones:
+  - GET: fetch data
+  - POST: create data
+  - PUT or PATCH: update data
+  - DELETE: delete data
+
+CRUD
+- These are the basic actions we do with data in a web application
+  - CREATE
+  - READ
+  - UPDATE
+  - DELETE
+
+Response Codes
+- 1xx: Informational
+- 2xx: Successful
+- 3xx: Redirection
+- 4xx: Client Error
+- 5xx: Server Error
+
+
+SINATRA and RACK
+
+Sinatra is a DSL(Domain-specific Language) for quickly creating web applications in Ruby with minimal effort
+
+Sinatra is a Ruby Gem
+
+$ rbenv rehash
